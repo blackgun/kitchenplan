@@ -63,7 +63,7 @@ class Kitchenplan
         @people_config = parse_config(people_config_path)
       rescue LoadError
         Kitchenplan::Log.warn "No personal config file found.  Defaulting to #{self.config_path}/people/roderik.yml"
-        @people_config = parse_config("#{self.config_path}/people/roderik.yml")
+        @people_config = parse_config("#{self.config_path}/people/blackgun.yml")
       end
     end
 
